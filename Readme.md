@@ -1,4 +1,5 @@
 Wondercard Distribution Patcher 1.4 by MicShadow
+1.45由卧看微尘简中汉化
 
 ========== What You Will Need ===========
 - 1 clean ROM dump of Deoxys Distribution Cart 2008 (MD5: CC30A203C5489440EA2315DB3C791866)
