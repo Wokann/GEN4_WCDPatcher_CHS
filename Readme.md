@@ -99,17 +99,29 @@ Fixed a platinum bug, as well as a cosmetic one
 
 
 ========== 命令行设置 ==========
+
 -ohash					Overrides hash checking to allow for a different hash on the distro rom
+
 -s					Silent mode. Produces no dialogs for auto patching
+
 -nogui					After completing the command line switches, exits the program, rather than showing the GUI. Best used with -s and -ohash
+
 -wcard [wondercard location]		Specifies a wondercard for the autopatching option
+
 -dist [distribution rom]		Specifies the distribution rom for the autopatching option
+
 -region [region]			Choices are English, French, Italian, Korean, Spanish and Japanese. The region for the distributed rom
+
 -nrom [new file path]			Specifies the new location for the autopatching option
+
 -title [12 character string]		Specifies the new NDS ROM title
+
 -dodirdef [directory]			Specifies a directory to loop, select all wondercards and make distro roms out of. (Uses default settings currently)
+
 -desclang [description_language]	Specifies the language to change the description for. Same options as -region (excepting Korean)
+
 -desc [description]			Specifies the description for the ROM banner information (shown on flashcart menus)
+
 -ap					Starts the autopatching (not needed for -dodirdef)
 
 NOTE: command line option updates will only be occasional, as interest is limited to myself it seems
@@ -160,14 +172,21 @@ e.g. (%l) %t - %c (%w)
 =========== 故障排除 ===========
 
 Q) 试图修补文件时发生了另一个通用错误，我该怎么办？
+
 A) 确保您在应用程序位置上有写入和阅读访问权限，并且输入文件是正确的。
 
+
 Q) 每当我尝试接收神秘礼物时，它说我以前已经收到了这份礼物。 谁给的？
+
 A) 1.1纠正此错误。 版本1有这个问题。 如果此错误仍然适合您，请告诉我。
 
+
 Q) 我在哪里获得官方配信发行rom？
+
 A) 我无法帮助您完成这一部分，这取决于您。 Google是你的好朋友。
+
 提示: Deoxys Distributon Cart 2008
+
 
 您发现的任何其他错误，请向我提供信息（gbatemp.net的micshadow）或在程序线程中回复。
 
@@ -180,15 +199,27 @@ A) 我无法帮助您完成这一部分，这取决于您。 Google是你的好�
 它是C＃.NET 2.0，该项目文件当前在C＃2010 Express Beta 2格式中，但代码本身为.NET 2.0书面
 
 =========== Credits ============
+
 The original patching thread on GBATemp.net (http://gbatemp.net/index.php?showtopic=92283&st=15)
+
 报告神秘卡片ID错误的测试人员/用户（感谢Jruschme！）
+
 TM2-Megatron和Alexmoron进行测试
+
 Pokesav Creators，用于创建一个神秘卡片编辑器，我用于参考
+
 再次提供TM2-Megatron，以提供对“本地唯一”选项的见解
+
 Rockman GFF获取有关使用白金的神秘卡片的信息
+
 Crystal - 项目图标图标。 （使用irkick图标）
+
 Cracker, 用于制作第一个命令行修补程序并提供有价值的信息
+
 Darkfader, 他在内部DS CRC操作上的工作
+
 Marcel de Wijs, 他那非常有用的crctool c＃class
+
 artic_flame, 几乎到了Patcher
+
 当然还有 Chamillionaire 提供偏移信息
