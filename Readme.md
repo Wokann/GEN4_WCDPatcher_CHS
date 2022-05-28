@@ -1,50 +1,41 @@
 Wondercard Distribution Patcher 1.4 by MicShadow
+
 1.45由卧看微尘简中汉化
 
-========== What You Will Need ===========
-- 1 clean ROM dump of Deoxys Distribution Cart 2008 (MD5: CC30A203C5489440EA2315DB3C791866)
-- A valid wondercard file (.pcd, 856 bytes, found on db.pokesav.org)
+========== 你需要的准备的东西 ===========
+- 1 个 2008代欧奇希斯配信卡带的纯净dump ROM (MD5: CC30A203C5489440EA2315DB3C791866)
+- 1个有效的神秘卡片配信卡文件 (后缀.pcd, 856 bytes, 可在db.pokesav.org查阅)
 - .NET Framework 2.0
 
-========== How to use the patcher ========
-Its pretty self explanatory, but anyway:
+========== 如何使用自制配信器 ========
+1) 选择代欧奇希斯官方配信文件(.nds)
+2) 选择有效的神秘卡片配信卡文件(pcd)
+3) 选择打完补丁生成的ROM存放的位置
+4) 为新生成的NDS命名标题 (游戏标题，最大12字符)
+如果不更改，将保持原状 DEOXYS2008
+5) 点击“打补丁”按钮
 
-1) Select your Deoxys distro (nds) file
-2) Select the valid wondercard file (pcd)
-3) Select the new loction for the patched NDS file
-4) Select a title for the new NDS (The game title, maximum 12 characters)
-If the title remains blank, it will stay as DEOXYS2008
-5) Click the patch button
+========== 游戏ID ===========
+你可以手动输入十六进制字节来设置游戏版本的限制。
+你需要将允许配信的游戏id的十六进制值累加起来。
+现有已知的游戏id为：
+钻石 = 0004
+珍珠 = 0008
+白金 = 0010
+魂银 = 0001
+心金 = 8000
 
-========== Hex Game ID's ===========
-It is possible to set your own custom game restrictions, using manually entered
-hex characters. To combine games, you must add the hex values together
-the known game ID's are:
+你需要将选中的游戏版本的id累加起来，可以使用Windows系统自带的计算器，有十六进制模式运算。其他可用的计算工具也均可。
 
-Diamon = 0004
-Pearl = 0008
-Platinum = 0010
-Pokemon SoulSilver = 0001
-Pokemon HeartGold = 8000
+如: 
+想制作仅允许钻石和心金接收配信的，需要
+钻石 (0004) + 心金 (8000)
+0004+8000 = 8004 (十六进制)
 
-These are hex values, so you will need to add them together as hex values
-The Windows 7/Vista calculator has a 'Programmer' mode, which has a hex setting within it
-
-To change to hex mode in the calculator, Select View from the top menu, and select Programmer
-Make sure the Hex button is selected on the left, and then add the above values together to
-create your own custom game settings
-
-You can use any tool that accepts hex to create custom game restrictions
-
-For example: 
-To make a custom restriction that only allows Diamond and HeartGold to recieve wondercards, use
-Diamond (0004) + Pokemon HeartGold (8000)
-0004+8000 = 8004 (in hex)
-
-All the games together would be:
+全版本均可接收即是:
 0004+0008+0010+0001+8000 = 801D
 
-========== Changelog ============
+========== 更新日志 ============
 
 1.45
 -更改为简体中文
@@ -106,7 +97,7 @@ Fixed a platinum bug, as well as a cosmetic one
 -Inital release
 
 
-========== Command Line Options ==========
+========== 命令行设置 ==========
 -ohash					Overrides hash checking to allow for a different hash on the distro rom
 -s					Silent mode. Produces no dialogs for auto patching
 -nogui					After completing the command line switches, exits the program, rather than showing the GUI. Best used with -s and -ohash
@@ -122,11 +113,11 @@ Fixed a platinum bug, as well as a cosmetic one
 
 NOTE: command line option updates will only be occasional, as interest is limited to myself it seems
 
-========== Platinum Compatibility =========
+========== 白金兼容性 =========
 
-Platinum is fully compatible with this patcher
+本自制配信器完全兼容白金。
 
-========== Macros =============
+========== 控制符 =============
 
 Macros are supported in this version, in all of the text fields minus game version field and Wondercard file
 The macros are:
@@ -149,13 +140,12 @@ e.g. (%l) %t - %c (%w)
 would equal on a English cart:
 (English) Deoxys Distribution 2008 - Nintendo (ALAMOS-DARKRAI-PKM-DB)
 
-========== Batch capability ============
+========== 批量补丁 ============
 
-A batch patching function GUI was added to this version.
-To use it, type all values like an individual patch (with macros, if required) except for Wondercard file
+本版本添加了批量补丁功能。
+首先设置好参数(以及控制符，如有)
 Then, press the B button. Select a directory to search for Wondercards in
-The function will then create a new distro for each wondercard found
-
+The function will then create a new distro for p/
 ========== Game Version ID =============
 
 
