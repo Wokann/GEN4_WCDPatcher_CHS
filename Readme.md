@@ -1,6 +1,6 @@
 Wondercard Distribution Patcher 1.4 by MicShadow
 
-1.45由卧看微尘简中汉化
+1.45由卧看微尘简中汉化（https://github.com/Wokann/WCDPatcher_CHS）
 
 ========== 你需要的准备的东西 ===========
 - 1 个 2008代欧奇希斯配信卡带的纯净dump ROM (MD5: CC30A203C5489440EA2315DB3C791866)
