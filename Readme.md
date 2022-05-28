@@ -44,6 +44,7 @@ All the games together would be:
 0004+0008+0010+0001+8000 = 801D
 
 ========== Changelog ============
+
 1.45
 -更改为简体中文
 
