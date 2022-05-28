@@ -16,6 +16,7 @@ Wondercard Distribution Patcher 1.4 by MicShadow
 5) 点击“打补丁”按钮
 
 ========== 游戏ID ===========
+
 你可以手动输入十六进制字节来设置游戏版本的限制。
 你需要将允许配信的游戏id的十六进制值累加起来。
 现有已知的游戏id为：
@@ -119,76 +120,75 @@ NOTE: command line option updates will only be occasional, as interest is limite
 
 ========== 控制符 =============
 
-Macros are supported in this version, in all of the text fields minus game version field and Wondercard file
-The macros are:
+文本控制符,可在除神秘卡片和目标游戏字段之外的所有字段中使用。
+控制符列表:
 
-%t = Internal ROM title (12 characters)
+%t = 内部ROM标题（12个字符）
 
-%l = Original distro language
+%l = 原始发行语言
 
-%d = Original ROM description
+%d = 原始ROM描述
 
-%n = Original ROM name (Description title)
+%n = 原始ROM名称（描述标题）
 
-%c = Original ROM company
+%c = 原始ROM公司
 
-%f = Wondercard parent directory name
+%f = 神秘卡片上级菜单名称
 
-%w = Wondercard name (minus extension)
+%w = 神秘卡片名称（减去扩展）
 
 e.g. (%l) %t - %c (%w)
-would equal on a English cart:
+在英语卡带上将等同:
 (English) Deoxys Distribution 2008 - Nintendo (ALAMOS-DARKRAI-PKM-DB)
 
 ========== 批量补丁 ============
 
 本版本添加了批量补丁功能。
 首先设置好参数(以及控制符，如有)
-Then, press the B button. Select a directory to search for Wondercards in
-The function will then create a new distro for p/
-========== Game Version ID =============
+然后，按B按钮。 选择一个目录以搜索神秘卡片配信卡文件
+然后，该功能将为其生成新的ROM p/
+========== 游戏版本 ID =============
 
 
+注意：您可以将自己的ID直接输入到程序中，而无需编辑WonderCard
+只需在十六进制（例如000C）中输入两个字节值即可使用此功能
 
-NOTE: You can enter your own ID's directly into the program without needing to edit the Wondercard
-Simply enter a two byte value in hex (e.g. 000C) to use this function
+将来可能会支持更多ID，但现在只参考讨论线程（请参阅信用）。
 
-More ID's may be supported in the future, but for now just refer to the discussion thread (see Credits) for more ID's
+任何问题？ 请参阅本节
 
-Any problems? see this section
+=========== 故障排除 ===========
 
-=========== Troubleshooting ===========
+Q) 试图修补文件时发生了另一个通用错误，我该怎么办？
+A) 确保您在应用程序位置上有写入和阅读访问权限，并且输入文件是正确的。
 
-Q) Another generic error occured while trying to patch the file, what should I do?
-A) Make sure you have write and read access on the application location, and that the input files are correct
+Q) 每当我尝试接收神秘礼物时，它说我以前已经收到了这份礼物。 谁给的？
+A) 1.1纠正此错误。 版本1有这个问题。 如果此错误仍然适合您，请告诉我。
 
-Q) Whenever I try to recieve the wondercard gift, it says I have already recieved this gift before. What gives?
-A) 1.1 rectifies this bug. Version 1 had this problem. If this bug still occurs for you, let me know
+Q) 我在哪里获得官方配信发行rom？
+A) 我无法帮助您完成这一部分，这取决于您。 Google是你的好朋友。
+提示: Deoxys Distributon Cart 2008
 
-Q) Where do I get the distribution rom?
-A) I cant help you with this part, it's up to you. Google is your friend
-hint: Deoxys Distributon Cart 2008
+您发现的任何其他错误，请向我提供信息（gbatemp.net的micshadow）或在程序线程中回复。
 
-Any other bugs you find, please PM the information to me (MicShadow at GBATemp.net) or reply in the program thread
+=========== 资源 =============
 
-=========== Source =============
+源包含在此版本中
+随着最近的后端重写，该代码以整洁而模块化的布局重写
+并非所有功能都有描述
 
-The source is included in this version
-With the recent backend rewrite,the code is rewritten in a neat and modular layout
-Not all functions have descriptions however
-
-It is C# .NET 2.0, the project file is currently in C# 2010 Express Beta 2 format, but the code itself is .NET 2.0 written
+它是C＃.NET 2.0，该项目文件当前在C＃2010 Express Beta 2格式中，但代码本身为.NET 2.0书面
 
 =========== Credits ============
 The original patching thread on GBATemp.net (http://gbatemp.net/index.php?showtopic=92283&st=15)
-The testers/users who reported the card ID bug (Thanks jruschme!)
-TM2-Megatron and AlexMoron for help with testing
-Pokesav creators, for creating a wondercard editor which i used for reference
-TM2-Megatron again, for providing insight into the 'local only' options
-Rockman GFF for the info on using the wondercards on Platinum 
-Crystal - Project Icons iconpack. (uses the IRKick icon)
-Cracker, for making the first command line patcher and providing valuable information
-Darkfader, for his work on the internal DS CRC operations
-Marcel de Wijs, for his useful CRCTool C# class
-artic_flame, for almost getting to the patcher
-and of course Chamillionaire for providing the offset information
+报告神秘卡片ID错误的测试人员/用户（感谢Jruschme！）
+TM2-Megatron和Alexmoron进行测试
+Pokesav Creators，用于创建一个神秘卡片编辑器，我用于参考
+再次提供TM2-Megatron，以提供对“本地唯一”选项的见解
+Rockman GFF获取有关使用白金的神秘卡片的信息
+Crystal - 项目图标图标。 （使用irkick图标）
+Cracker, 用于制作第一个命令行修补程序并提供有价值的信息
+Darkfader, 他在内部DS CRC操作上的工作
+Marcel de Wijs, 他那非常有用的crctool c＃class
+artic_flame, 几乎到了Patcher
+当然还有 Chamillionaire 提供偏移信息
